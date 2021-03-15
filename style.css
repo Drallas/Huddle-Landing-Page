@@ -6,7 +6,9 @@
 :root {
     /* Primary Colors */
     --Violet: hsl(257, 40%, 49%);
-    --SoftMagenta: hsl(300, 69%, 71%);
+    --SoftMagenta: hsl(300, 69%, 71%); 
+    --HeaderColor: hsl(0, 0%, 100%);
+    --TextColor: hsl(300, 100%, 99%);
 
     /* Typography - Headings 400, 600 */
     --Poppins: 'Poppins', sans-serif;
@@ -30,18 +32,30 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.3;
+  background-color: var(--Violet);
+  background-image: url(./images/bg-mobile.svg);
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 h1 {
     font-family: var(--Poppins);
+    color: var(--HeaderColor);
 }
 
 p {
     font-family: var(--OpenSans);
+    color: var(--TextColor);
 }
 
+.social {
+    border: 1px solid;
+}
 
-
+.social__image {
+    width: 2rem;
+    height: 2rem;
+}
 
 /* Styling for Attribution in the Footer section */
 .attribution { font-size: 11px; text-align: center; }
