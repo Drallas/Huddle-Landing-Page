@@ -40,6 +40,12 @@ body {
   
 }
 
+@media (min-width : 23.4375rem) {
+    body {
+        background-image: url(./images/bg-desktop.svg);
+    }
+}
+
 h1 {
     font-family: var(--Poppins);
     font-size: 1.5rem;
@@ -79,13 +85,31 @@ p {
     text-align: center;
 }
 
-.container__image img {
-    margin-top: 3.6rem;
-    width: 17.75rem;
+@media (min-width : 500px) {
+    .container {
+        display: flex;
+        
+    }
 }
 
+.container__image img {
+    flex: 1 1;
+    margin-top: 3.6rem;
+    width: 80%;
+    border: 1px solid;
+}
+
+@media (min-width : 500px) {
+    .container__image img {
+        width: 100%;
+    }
+}
+
+
 .container__text {
+    flex: 1 1;
     margin: 3.3rem 1.7rem 0 1.7rem;
+    border: 1px solid;
 }
 
 .container__text p {
@@ -105,6 +129,8 @@ p {
     font-weight: 300;
     transition: all 0.1s ease-in-out 0s;
 }
+
+
 
 .container__text__button:hover {
     background-color: var(--SoftMagenta);
