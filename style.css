@@ -123,7 +123,9 @@ p {
 
 /* Social Image Section */
 .social__image__container {
+
     text-align: center;
+    display: block;
 }
 
 .social__image__container img:nth-child(2) {
