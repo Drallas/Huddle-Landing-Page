@@ -29,6 +29,13 @@ html {
           box-sizing: inherit;
 }
 
+* {
+    outline: none;
+    -moz-outline-style: none;
+}
+
+/* Tags Section */
+
 body {
   margin: 0;
   padding: 0;
@@ -38,12 +45,6 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   
-}
-
-@media (min-width : 23.4375rem) {
-    body {
-        background-image: url(./images/bg-desktop.svg);
-    }
 }
 
 h1 {
@@ -147,6 +148,13 @@ p {
 }
 
 /* Media Queries for Desktop */
+
+@media (min-width : 23.4375rem) {
+    body {
+        background-image: url(./images/bg-desktop.svg);
+    }
+}
+
 @media (min-width : 40.625rem) {
 
     h1 {
