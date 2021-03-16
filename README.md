@@ -14,7 +14,6 @@ This is my solution to the [Huddle landing page with single introductory section
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -27,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/desktop-preview.jpg)
+![](./images/screenshot.png)
 
 ### Links
 
@@ -39,35 +38,46 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS with custom properties (SHolding back on the tempation to use SASS)
+- CSS with custom properties (Still Holding back on the tempation to use SASS)
+- BEM
 - Flexbox
 - Mobile-first workflow
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned a lot during my second project. Still working to set-up an effective workflow. I didn't look at the previous project because I learn more doing this 'The Hard Way'. Yet I still struggle a bit with layout need to Google / Lookup basic things. I did my first CSS transitions and button shadow.  
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
+```css
+.container__text__button {
+    width: 13rem;
+    background-color: var(--HeaderColor);
+    color: var(--Violet);
+    border-style: none;
+    box-shadow: 0px 3px 5px 3px var(--ButtonShadow);
+    border-radius: 1.25rem;
+    margin-bottom: 3.5rem;
+    padding: 0.625rem;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: all 0.1s ease-in-out 0s;
+}
 ```
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+My focus was on getting the responsive to be smooth and pleasant and be close to pixel 'perfect'. Also wanted to use transitions and correct colours, using a picker if needed to get the right hex value. Also want to use the Dev tools more to test assumptions and tweak the layout before I convert them to HTML / CSS. 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [CSS Filter Generator](https://codepen.io/sosuke/pen/Pjoqqp) - This helped me to turn the SVG buttons into the correct colors.
+- [What are Semantic Tags](https://www.developerdrive.com/what-are-semantic-html-tags) - Learn more about Semantic Tags
+- [Semantic HTML Explained](https://superdevresources.com/section-article-nav-aside-html5/) - This is helpful to understand when to use which Semantic Tag.
+- [Typora](https://www.typora.io) - Handy Editor to Wysiwig edit these README.md files. I don't enjoy typing 'Raw' Markdown but i love the MD format!
 
 ## Author
 
 - Frontend Mentor - [@Drallas](https://www.frontendmentor.io/profile/Drallas)
 - Dev.to - [@Drallas](https://dev.to/drallas)
 
-## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
 
