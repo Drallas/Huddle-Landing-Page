@@ -6,9 +6,10 @@
 :root {
     /* Primary Colors */
     --Violet: hsl(257, 40%, 49%);
-    --SoftMagenta: hsl(300, 69%, 71%); 
+    --SoftMagenta: rgb(232, 130, 232); 
     --HeaderColor: hsl(0, 0%, 100%);
     --TextColor: hsl(300, 100%, 99%);
+    --ButtonShadow: hsl(256, 32%, 35%);
 
     /* Typography - Headings 400, 600 */
     --Poppins: 'Poppins', sans-serif;
@@ -36,28 +37,104 @@ body {
   background-image: url(./images/bg-mobile.svg);
   background-position: top;
   background-repeat: no-repeat;
+  
 }
 
 h1 {
     font-family: var(--Poppins);
+    font-size: 1.5rem;
+    font-weight: 400;
     color: var(--HeaderColor);
+    line-height: 1.5;
 }
 
 p {
     font-family: var(--OpenSans);
+    font-weight: 400;
     color: var(--TextColor);
+    line-height: 1.4;
+    opacity: 0.8;
 }
 
-.social {
-    display: inline-block;
-    border: 1px solid black;
+
+/* Logo Section */
+.logo {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.logo img {
+    margin: 30px 0 0 12px;
+    width: 183px;
+    height: 30px;
+}
+
+
+/* Main Section */
+
+.container {
+    min-width: 375px;
+    display: block;
+    text-align: center;
+}
+
+.container__image img {
+    margin-top: 3.6rem;
+    width: 17.75rem;
+}
+
+.container__text {
+    margin: 3.3rem 1.7rem 0 1.7rem;
+}
+
+.container__text p {
+    padding-bottom: 10px;
+}
+
+.container__text__button {
+    width: 13rem;
+    background-color: var(--HeaderColor);
+    color: var(--Violet);
+    border-style: none;
+    box-shadow: 0px 3px 5px 3px var(--ButtonShadow);
+    border-radius: 1.25rem;
+    margin-bottom: 3.5rem;
+    padding: 0.625rem;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+.container__text__button:hover {
+    background-color: var(--SoftMagenta);
+    color: var(--HeaderColor);
+}
+
+/* Social Image Section */
+.social__image__container {
+    text-align: center;
+}
+
+.social__image__container img:nth-child(2) {
+    margin: 0rem 0.5rem;
 }
 
 .social__image {
-    width: 2rem;
-    height: 2rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(98deg) brightness(107%) contrast(106%);
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 0.4rem;
+    transition: all 0.1s ease-in-out 0s;
 }
 
+.social__image:hover {
+    filter: invert(48%) sepia(23%) saturate(5559%) hue-rotate(295deg) brightness(107%) contrast(93%);
+}
+
+
 /* Styling for Attribution in the Footer section */
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; visibility: hidden;}
 .attribution a { color: hsl(228, 45%, 44%); }
