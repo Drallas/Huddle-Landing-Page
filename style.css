@@ -88,8 +88,7 @@ p {
 
 .container__image img {
     padding: 3.5rem 0rem 2rem 0;
-    min-width: 296px;
-    max-width: 50%;
+    max-width: 77%;
 }
 
 .container__text {
@@ -108,10 +107,10 @@ p {
     border-style: none;
     box-shadow: 0px 3px 5px 3px var(--ButtonShadow);
     border-radius: 1.25rem;
-    margin-bottom: 3.5rem;
     padding: 0.625rem;
     font-size: 1rem;
     font-weight: 300;
+    margin-bottom: 5rem;
     transition: all 0.1s ease-in-out 0s;
 }
 
@@ -124,7 +123,6 @@ p {
 
 /* Social Image Section */
 .social__image__container {
-
     text-align: center;
     display: block;
 }
@@ -161,17 +159,19 @@ p {
     h1 {
         font-size: 2.5rem;
         font-weight: 600;
+        max-width: 30.6rem;
     }
 
     p {
         font-size: 1.125rem;
+        max-width: 32rem;
     }
 
     .logo img {
-        width: 12.5rem;
-        height: 2.5rem;
+        width: 13.5rem;
+        height: 3.5rem;
         margin-left: 4rem;
-        margin-top: 3.5rem;
+        margin-top: 3rem;
     }
 
     .container {
@@ -185,17 +185,19 @@ p {
 
     .container__image img {
         max-width: 100%;
-        margin: 0.5rem 4.5rem 0rem 4.5rem
+        margin: 1rem 4.5rem 0rem 4.5rem
     }
 
     .container__text {
         text-align: left;
-        padding: 4.5rem 3.5rem 7rem 7rem;
+        padding: 4.5rem 3rem 7rem 6.5rem;
         flex: 1 1;
     }
 
     .container__text__button {
-        width: 10rem;
+        width: 12.5rem;
+        height: 3.5rem;
+        border-radius: 28px;
     }
 
     .social__image__container {
