@@ -147,7 +147,7 @@ p {
 
 /* Media Queries for Desktop */
 
-@media (min-width : 23.4375rem) {
+@media (min-width : 23.5rem) {
     body {
         background-image: url(./images/bg-desktop.svg);
         background-position: 0% 0%;
