@@ -19,6 +19,8 @@ This is my solution to the [Huddle landing page with single introductory section
 
 ### The challenge
 
+Coding Time : 9 hrs 47 mins
+
 Users should be able to:
 
 - View the optimal layout for the page depending on their device's screen size
